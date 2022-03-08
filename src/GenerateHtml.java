@@ -32,7 +32,8 @@ class ShowGeneratedHtml {
     }
 };
 
-// --------------------------------------------------------- //
+// ---------------------------------------------------------------------------------------------------------------- //
+//gen de la page agebt 
 
   private generateAgentPage(Map<String, String> agentId, Map<String, String> materialAgent) {  
     return
@@ -70,8 +71,6 @@ class ShowGeneratedHtml {
         this.contextAgentPage ? generateAgentPage(this.agentId, this.materialAgent); : generateAllMaterials(this.allMaterials);
         bw.write("</body></html>");
         bw.close();
-    
-   
         Desktop.getDesktop().browse(f.toURI());
     }
 }
